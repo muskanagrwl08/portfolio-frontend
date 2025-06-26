@@ -45,7 +45,7 @@
   transform: translateY(-2px);
 }
 
-/* ✅ Mobile & small screen styles */
+/* Mobile & small screen styles */
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
@@ -101,7 +101,7 @@
   white-space: nowrap;
 }
 
-/* Optional Hover Effect */
+
 .email-vertical:hover {
   color: #1a73e8;
 }

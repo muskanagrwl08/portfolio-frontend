@@ -20,7 +20,7 @@
   transform: scale(1.1);
 }
 
-/* ✅ Hide on very small screens or reposition */
+
 @media (max-width: 576px) {
   .social-icons {
     position: absolute;
