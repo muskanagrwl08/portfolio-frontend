@@ -1,0 +1,114 @@
+.hero-section {
+  min-height: 90vh;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hello-text {
+  background: linear-gradient(90deg, #20caff, #00c2ff);
+  color: white;
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+}
+
+.hero-image-container {
+  position: relative;
+  width: fit-content;
+}
+
+.yellow-bg {
+  width: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.profile-img {
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ✅ Mobile & small screen styles */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .hero-image-container {
+    margin-top: 1.5rem;
+  }
+
+  .yellow-bg {
+    width: 200px;
+  }
+
+  .profile-img {
+    width: 160px;
+  }
+}
+.hero-wrapper {
+  position: relative;
+}
+
+.email-vertical {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: right center;
+  font-size: 0.75rem;
+  color: #333;
+  letter-spacing: 2px;
+  font-weight: 500;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+/* Optional Hover Effect */
+.email-vertical:hover {
+  color: #1a73e8;
+}
+
+/* Hide on small screens */
+@media (max-width: 576px) {
+  .email-vertical {
+    display: none;
+  }
+}

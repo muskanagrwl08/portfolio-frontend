@@ -1,0 +1,192 @@
+.about-section {
+  background-color: #f7f7f7fd;
+  padding:  100px 0;
+    position: relative;
+  overflow: hidden;
+}
+
+/* Main Flex Layout */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+/* Left Blob + Hand */
+.left-blobs {
+  flex: 1;
+  max-width: 25%;
+  min-width: 250px;
+  position: relative;
+}
+
+.gray-blob {
+  position: absolute;
+  width: 280px;
+  top: -40px;
+  left: 0;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.hand-img {
+  width: 250px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Center Text */
+.about-text {
+  flex: 2;
+  max-width: 50%;
+  padding: 20px;
+  z-index: 2;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Right Blob + Email */
+.right-blobs {
+  flex: 1;
+  max-width: 20%;
+  min-width: 150px;
+  position: relative;
+}
+
+.yellow-blob {
+  width: 180px;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.email-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 1rem;
+  color: #555;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 2;
+}
+
+/* Bottom blobs */
+.bottom-blobs {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 0;
+}
+
+.bottom-yellow,
+.bottom-gray {
+  width: 120px;
+  height: auto;
+  opacity: 0.5;
+}
+
+/* 🔽 Responsive styles for tablets and smaller */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .left-blobs,
+  .right-blobs {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .gray-blob,
+  .yellow-blob {
+    position: absolute;
+    width: 180px;
+    top: 0;
+    opacity: 0.4;
+  }
+
+  .hand-img {
+    width: 180px;
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 992px) {
+  .hand-img {
+    transform: rotate(90deg); /* or 90 or 270 depending on how the image is pointing */
+  }
+}
+
+
+  .about-text {
+    max-width: 90%;
+    padding: 0 15px;
+  }
+
+  .email-vertical {
+    display: none;
+  }
+
+  .bottom-blobs {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .bottom-yellow,
+  .bottom-gray {
+    width: 60px;
+  }
+}
+
+/* 🔽 Extra small screens (like iPhone SE) */
+@media (max-width: 576px) {
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .hand-img {
+    width: 140px;
+  }
+
+  .gray-blob,
+  .yellow-blob {
+    width: 150px;
+  }
+
+  .bottom-yellow,
+  .bottom-gray {
+    width: 50px;
+  }
+}
+.span-e{
+  font-weight: bold;
+}
